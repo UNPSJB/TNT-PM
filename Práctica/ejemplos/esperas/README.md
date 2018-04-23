@@ -11,3 +11,8 @@ manera sencilla.
 
 Este proyecto de docker-compose tiene 2 servicios, **remolon** que en su `CMD`
 tiene un `sleep` y **el_que_espera** que tiene como `CMD` a espera.sh.
+
+Para probarlo utilizar `docker-compose up --build`.
+
+
+![](docs/esperas.gif)
