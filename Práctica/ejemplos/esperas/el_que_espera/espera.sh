@@ -8,5 +8,5 @@ do
     netcat -z $SERVER $PORT && break
     sleep 1
 done
-$COMANDO
+exec $COMANDO
 
