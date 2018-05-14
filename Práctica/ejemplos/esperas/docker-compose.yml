@@ -2,7 +2,7 @@ version: '2'
 services:
   remolon:
     build: ./remolon
-    portsd:
+    ports:
       - 1234:1234
   el_que_espera:
     build: ./el_que_espera
