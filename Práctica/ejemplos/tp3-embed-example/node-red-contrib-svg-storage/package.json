@@ -1,0 +1,16 @@
+{
+  "name": "node-red-contrib-svg-storage",
+  "version": "1.0.0",
+  "description": "A SVG storage node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "node-red" : {
+    "nodes": {
+        "lower-case": "lower-case.js"
+    }
+  }
+}

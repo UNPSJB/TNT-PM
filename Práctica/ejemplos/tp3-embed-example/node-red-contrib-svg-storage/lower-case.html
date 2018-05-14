@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('lower-case',{
+        category: 'function',
+        color: '#FF0000',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"lower-case";
+        },
+        oneditprepare: () => {
+            console.log("HOLA");
+            debugger;
+            $('#text-area').text('HOLA');
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="lower-case">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+        <label for="node-svg-input"><i class="icon-tag"></i> Archivo:</label>
+    </div>
+    <div class="form-row">
+        <input type="file" id="node-svg-input" placeholder="Name">
+        <input type="text" id="text-area"></input>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="lower-case">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>
